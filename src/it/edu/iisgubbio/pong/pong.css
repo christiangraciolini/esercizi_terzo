@@ -1,0 +1,12 @@
+#racchetta1{
+	-fx-fill: blue;
+}
+#racchetta2{
+	-fx-fill: red;
+}
+
+#sfondo {
+	-fx-background-image: url(sfondo.jpg);
+}
+
+

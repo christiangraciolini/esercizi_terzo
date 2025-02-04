@@ -1,0 +1,24 @@
+.text-field {
+	-fx-background-color:yellow;
+}
+
+.testo {
+	
+	-fx-text-fill:blue;
+	
+}
+.incognite{
+	
+	-fx-text-fill:red;
+	
+}
+.sfondo{
+	-fx-background-color:pink;
+}
+.spazio{
+	-fx-vgap:20;
+	-fx-hgap:20;
+	-fx-padding:10,10,10,10;
+	
+	
+}

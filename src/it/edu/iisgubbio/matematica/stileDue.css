@@ -1,0 +1,17 @@
+.s {
+	-fx-background-color:green;
+	
+}
+.b{
+	-fx-border-color:black;
+}
+.spazio{
+	-fx-vgap:20;
+	-fx-hgap:20;
+	-fx-padding:10,10,10,10;
+	
+	
+}
+.p{
+	-fx-background-color:blue
+}

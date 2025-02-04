@@ -1,0 +1,21 @@
+.spazio{
+	-fx-vgap:20;
+	-fx-padding:10,10,10,10;
+	
+}
+.text-field {
+	-fx-background-color:black;
+	-fx-text-fill:white;
+}
+
+.testo {
+	
+	-fx-text-fill:red;
+	
+}
+.bottone{
+	-fx-background-color:red;
+	-fx-text-fill:blue;
+}
+
+

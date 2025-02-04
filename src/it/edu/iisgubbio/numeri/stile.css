@@ -1,0 +1,14 @@
+#sfondo {
+	-fx-hgap: 10;
+	-fx-vgap: 10;
+	-fx-padding: 10, 10, 10, 10;
+}
+#label {
+	-fx-text-fill : #144CF5;
+}
+#button {
+	-fx-background-color : #D914F5;
+}
+#scritta {
+	-fx-text-fill : #F52020;
+}
