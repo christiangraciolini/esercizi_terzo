@@ -7,6 +7,9 @@ import javafx.scene.control.TextField;
 import javafx.scene.layout.GridPane;
 import javafx.stage.Stage;
 
+/**
+ * decifra e cifra una parola
+ */
 public class CesareParametri extends Application{
 
 	TextField cParola = new TextField();
