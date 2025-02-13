@@ -49,12 +49,7 @@ public class Rettangolo extends Application{
 
 
 
-	  private Object eseguiArea() {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-
+     }
 
 
 
