@@ -14,6 +14,25 @@ public class Muffato extends Formaggio{
 	public void setInterno(boolean interno) {
 		this.interno = interno;
 	}
+	public String toString() {
+
+		String descrizione=nome +" "+ prezzoAlKg+"€/Kg"+" è stagionato: "+tempoStagionatura+" mese/i"+" muffa: "+nomeMuffa;
+
+		if(!dop) {
+			descrizione += " il formaggio non è DOP";
+		}else {
+			descrizione+= " il formagio è DOP";
+		}
+		if(!interno) {
+			descrizione+= " la muffa è esterna";
+		}else {
+			descrizione+= " la muffa è interna";
+		}
+		return descrizione;
+
+		
+
+	}
 	
 }
 

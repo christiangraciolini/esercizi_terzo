@@ -130,9 +130,13 @@ public class Negozio extends Application {
    		double prezzo = Double.parseDouble(tfPrezzo.getText());
    		String nomeMuffa = tfNomeMuffa.getText();
    		boolean interna = cbInterna.isSelected();
+   		boolean dop = tbDOP.isSelected();
+   		int tempoDiStagionatura = Integer.parseInt(tfStagionatura.getText());
    		
    		Muffato muffa = new Muffato(nome,prezzo,nomeMuffa);
    		muffa.setInterno(interna);
+   		muffa.setTempoStagionatura(tempoDiStagionatura);
+   		muffa.setDop(dop);
    		lvProdotti.getItems().add(muffa);
 
    	}
