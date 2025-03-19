@@ -1,50 +1,44 @@
 package it.edu.iisgubbio.mobilita.mezzi;
 
 public class AMuscoli extends MezzoDiTrasporto{
-	
-	public String muscoliCoinvolti;
+	public  String muscoliCoinvolti;
 
 	public AMuscoli() {
-		super();
+		super();	
 	}
 
-	public AMuscoli(String muscoliCoinvolti) {
-		super();
+	public AMuscoli(String nome, double costo, String muscoliCoinvolti) {
+		super(nome, costo);
 		this.muscoliCoinvolti = muscoliCoinvolti;
-	}
+	} 
 
-	public AMuscoli(double costo, String nome, String muscoliCoinvolti) {
-		super(costo, nome);
-		this.muscoliCoinvolti = muscoliCoinvolti;
-	}
-	public boolean parteAlta() {
-		boolean parteAlta = true;
-		if (muscoliCoinvolti.equals("addome")) {
-			return parteAlta;
-		} else {
-			if (muscoliCoinvolti.equals("bicipite")) {
-				return parteAlta;
-			}else {
-				if (muscoliCoinvolti.equals("tricipite")) {
-					return parteAlta;
-				} else {
-					if (muscoliCoinvolti.equals("pettorale")) {
-						return parteAlta;
-					} else {
-						return parteAlta = false;
-					}
-				}
-			}
+	public boolean parteAlta () {
+		boolean parteAlta=true;
+		switch(muscoliCoinvolti) {
+		case "bicipiti":
+			parteAlta=true;
+			break;
+		case "tricipiti":
+			parteAlta=true;
+			break;	
+		case "quadricipiti":
+			parteAlta=false;
+			break;
+		case "polpacci":
+			parteAlta=false;
+			break;
+			default:
+				parteAlta=false;
 		}
+		return parteAlta;
 	}
-
 	@Override
 	public String toString() {
-		String descrizione = "AMuscoliCoinvolti="+muscoliCoinvolti+"nome="+nome+"costo"+costo;
+		String descrizione = "veicolo a muscoli: "+ nome+ ", "+costo+"€";
 		if (parteAlta()) {
-			descrizione=descrizione+"i muscoli fanno parte della parte alta";
+			descrizione=descrizione+"(usa "+muscoliCoinvolti+")";
 		} else {
-			descrizione=descrizione+"i muscoli non fanno parte della parte alta";
+			descrizione=descrizione+"(usa "+muscoliCoinvolti+")";
 		}
 		return descrizione;
 	}
@@ -53,7 +47,12 @@ public class AMuscoli extends MezzoDiTrasporto{
 		return muscoliCoinvolti;
 	}
 
+
+
 	public void setMuscoliCoinvolti(String muscoliCoinvolti) {
 		this.muscoliCoinvolti = muscoliCoinvolti;
 	}
+
 }
+
+

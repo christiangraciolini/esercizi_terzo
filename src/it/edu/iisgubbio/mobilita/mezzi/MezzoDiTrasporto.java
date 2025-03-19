@@ -9,7 +9,7 @@ public class MezzoDiTrasporto {
 		super();
 	}
 
-	public MezzoDiTrasporto(double costo, String nome) {
+	public MezzoDiTrasporto(String nome,  double costo) {
 		super();
 		this.costo = costo;
 		this.nome = nome;
@@ -17,7 +17,7 @@ public class MezzoDiTrasporto {
 
 	@Override
 	public String toString() {
-		return "MezzoDiTrasporto [costo=" + costo + ", nome=" + nome + "]";
+		return "MezzoDiTrasporto:"+ nome+","+ costo+"€";
 	}
 
 	public double importoRata(int numeroRate) {

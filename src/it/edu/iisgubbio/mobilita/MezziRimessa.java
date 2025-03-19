@@ -1,10 +1,10 @@
 package it.edu.iisgubbio.mobilita;
-import it.edu.iisgubbio.mobilita.mezzi.MezzoDiTrasporto;
+import it.edu.iisgubbio.battaglianavale.Pezzo;
 
 public class MezziRimessa {
 	
 	public static void main(String[] args) {
-		MezzoDiTrasporto m = new MezzoDiTrasporto(400,"trattore");
+		Pezzo m = new Pezzo(1,1);
 		System.out.print(m);
 	}
 

@@ -7,14 +7,14 @@ public class AMotore extends MezzoDiTrasporto{
 	public AMotore() {
 		super();
 	}
-	public AMotore(double costo, String nome, double rumorosita, String carburante) {
-		super(costo, nome);
+	public AMotore(String nome,double costo,  double rumorosita, String carburante) {
+		super(nome, costo);
 		this.rumorosita = rumorosita;
 		this.carburante = carburante;
 	}
 	@Override
 	public String toString() {
-		return "AMotore [rumorosita=" + rumorosita + ", carburante=" + carburante + "]";
+		return "mezzo motorizzato:"+nome+"("+costo+"€)"+"che emette"+rumorosita+"db di rumore, consuma "+carburante;
 	}
 	public boolean possibileCemtriAbitati() {
 		

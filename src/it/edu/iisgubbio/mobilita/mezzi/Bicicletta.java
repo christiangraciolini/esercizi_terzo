@@ -11,11 +11,11 @@ public class Bicicletta extends MezzoDiTrasporto{
 	}
 	@Override
 	public String toString() {
-		String bici ="Bicicletta [peso=" + peso + ", numeroDiRapporti=" + numeroDiRapporti + ", costo=" + costo + "]";
+		String bici ="bicicletta: "+"pesa "+peso+"kg "+"(leggera) "+"costa "+costo+"€"+"( ha "+numeroDiRapporti+ "rapporti)";
 		if(leggera()) {
-			bici = bici + "la bicicletta è leggera";
+				bici = bici + "";
 			}else {
-				bici = bici + "la bicicletta è pesante";
+				bici = "bicicletta: "+"pesa "+peso+"kg "+"(pesante) "+"costa "+costo+"€"+"( ha "+numeroDiRapporti+ "rapporti)";
 			}
 		return bici;
 
